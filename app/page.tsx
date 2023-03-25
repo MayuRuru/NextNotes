@@ -11,6 +11,8 @@ export default function Home() {
       <h1>Hello there</h1>
       <p>
         <Link href="/about">Go to About</Link>
+        <br />
+        <Link href="/books">Link to Books</Link>
       </p>
     </main>
   );
