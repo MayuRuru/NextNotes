@@ -1,0 +1,7 @@
+{
+  "books": [
+    { "id": 1, "title": "TDD by example", "author": "Example" },
+    { "id": 2, "title": "Clean Code", "author": "Example" },
+    { "id": 3, "title": "Pragmatic Programmer", "author": "Example" }
+  ]
+}
