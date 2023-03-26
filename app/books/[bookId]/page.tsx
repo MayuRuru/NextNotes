@@ -1,8 +1,11 @@
 import getBook from "@/lib/getBook";
 import getBookInsights from "@/lib/getBookInsights";
 import BookInsights from "./components/BookInsights";
+import getAllBooks from "@/lib/getAllBooks";
 import { Suspense } from "react";
 import type { Metadata } from "next";
+
+import { notFound } from "next/navigation";
 
 type Params = {
   params: {
@@ -16,6 +19,13 @@ export async function generateMetadata({
 }: Params): Promise<Metadata> {
   const bookData: Promise<User> = getBook(bookId);
   const book: User = await bookData;
+
+  if (!book.name) {
+    return {
+      title: "Book not found",
+    };
+  }
+
   return {
     title: book.name,
     description: `This is the page of ${book.name}`,
@@ -31,6 +41,10 @@ export default async function BookPage({ params: { bookId } }: Params) {
 
   const book = await bookData;
 
+  if (!book.id) {
+    return notFound();
+  }
+
   // Progressive rendering:
   return (
     <>
@@ -44,4 +58,11 @@ export default async function BookPage({ params: { bookId } }: Params) {
       </Suspense>
     </>
   );
+}
+
+export async function generateStaticParams() {
+  const booksData: Promise<User[]> = getAllBooks();
+  const books = await booksData;
+
+  return books.map((book) => ({ bookId: book.id.toString() }));
 }
