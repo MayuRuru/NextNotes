@@ -36,3 +36,9 @@ type Post = {
   title: string;
   body: string;
 };
+
+type BlogPost = {
+  id: string;
+  title: string;
+  date: string;
+};
