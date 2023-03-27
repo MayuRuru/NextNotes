@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
+import Avatar from "./components/Avatar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,9 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="dark:bg-slate-900">
-        <nav>
-          <Navbar />
-        </nav>
+        <Navbar />
+        <Avatar />
         {children}
       </body>
     </html>
