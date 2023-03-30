@@ -24,8 +24,13 @@ export default async function Books() {
       {books.map((book) => {
         return (
           <>
-            <p key={book.id}>
-              <Link href={`/books/${book.id}`}>{book.title}</Link>
+            <p className="mt-4 text-2xl dark:text-white/90" key={book.id}>
+              <Link
+                className="hover:text-black/70 dark:hover:text-white"
+                href={`/books/${book.id}`}
+              >
+                {book.title}
+              </Link>
             </p>
             <br />
           </>
