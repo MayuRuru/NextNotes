@@ -2,8 +2,8 @@ type Book = {
   id: number;
   title: string;
   author: string;
-  //topic: string;
-  //link: string;
+  description: string;
+  link: string;
 };
 
 type User = {
