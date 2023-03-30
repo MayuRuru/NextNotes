@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 import React from "react";
 
 export default async function Books() {
-  const booksData: Promise<User[]> = getAllBooks();
+  const booksData: Promise<Book[]> = getAllBooks();
 
   const books = await booksData;
 
@@ -25,7 +25,7 @@ export default async function Books() {
         return (
           <>
             <p key={book.id}>
-              <Link href={`/books/${book.id}`}>{book.name}</Link>
+              <Link href={`/books/${book.id}`}>{book.title}</Link>
             </p>
             <br />
           </>
