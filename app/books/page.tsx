@@ -14,9 +14,9 @@ export default async function Books() {
   const books = await booksData;
 
   const content = (
-    <section>
+    <section className="px-6 prose prose-sm prose-slate dark:prose-invert mx-auto">
       <h2>
-        <Link href="/">Link to Home</Link>
+        <Link href="/">← Back to Home</Link>
       </h2>
       <br />
       {books.map((book) => {
