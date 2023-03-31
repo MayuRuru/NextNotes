@@ -13,8 +13,6 @@ export default async function Books() {
 
   const books = await booksData;
 
-  console.log("Hello");
-
   const content = (
     <section>
       <h2>
