@@ -2,7 +2,8 @@
 import Link from "next/link";
 import Posts from "./components/Posts";
 import { Inter } from "next/font/google";
-const inter = Inter({subsets: ['latin']})
+import CardSlider from "./components/CardSlider";
+const inter = Inter({ subsets: ["latin"] });
 
 //const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function Home() {
           This is <span className="font-bold">Mayu</span>.
         </span>
         <Posts />
+        <CardSlider />
       </p>
     </main>
   );
