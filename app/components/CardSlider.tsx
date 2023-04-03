@@ -2,22 +2,16 @@
 import SliderItem from "./SliderItem";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
-//type Props = {};
-
 function CardSlider() {
   const slideLeft = () => {
-    var slider = document.getElementById("slider");
-    console.log("SLIDER", slider);
-    if (slider != undefined) {
-      slider.scrollLeft = slider.scrollLeft - 500;
-    }
+    var slider = document.getElementById("slider")!;
+    slider.scrollLeft = slider.scrollLeft - 500;
   };
 
   const slideRight = () => {
-    var slider = document.getElementById("slider");
-    if (slider != undefined) {
-      slider.scrollLeft = slider.scrollLeft + 500;
-    }
+    var slider = document.getElementById("slider")!;
+
+    slider.scrollLeft = slider.scrollLeft + 500;
   };
 
   return (
