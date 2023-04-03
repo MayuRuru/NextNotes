@@ -70,5 +70,39 @@
       "description": "Recomendado para aprender técnicas que te permitan introducir tests en código legacy poco o no testeable, y a partir de ahí poder empezar a refactorizarlo. También te ayuda a que te des cuenta de cómo hacer tu código más testeable.",
       "link": "https://www.oreilly.com/library/view/working-effectively-with/0131177052/"
     }
+  ],
+  "follows": [
+    {
+      "id": 1,
+      "name": "Step4ward",
+      "type": "Community",
+      "description": "Inspiring and mentoring women in tech",
+      "link": "https://step4ward.notion.site/",
+      "avatar": "/public/images/collaborate.svg"
+    },
+    {
+      "id": 2,
+      "name": "No me da la vida",
+      "type": "Podcast",
+      "description": "By Alba Silvente (@dawntraoz) and Miriam González (@miriamgonp)",
+      "link": "https://www.youtube.com/c/nomedalavida",
+      "avatar": "/public/images/radio.svg"
+    },
+    {
+      "id": 3,
+      "name": "DonesTech",
+      "type": "Divulgation",
+      "description": "News, Transfeminist security, Workshops...",
+      "link": "https://www.youtube.com/c/nomedalavida",
+      "avatar": "/public/images/video.svg"
+    },
+    {
+      "id": 4,
+      "name": "Women Who Code",
+      "type": "Community",
+      "description": "International inclusive community producing trainings, conferences, hackatons...",
+      "link": "https://www.youtube.com/user/WomenWhoCode",
+      "avatar": "/public/images/study.svg"
+    }
   ]
 }

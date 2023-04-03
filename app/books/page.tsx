@@ -6,8 +6,6 @@ export const metadata: Metadata = {
   title: "Books",
 };
 
-import React from "react";
-
 export default async function Books() {
   const booksData: Promise<Book[]> = getAllBooks();
 

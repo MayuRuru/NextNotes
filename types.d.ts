@@ -6,6 +6,15 @@ type Book = {
   link: string;
 };
 
+type Follow = {
+  id: number;
+  name: string;
+  type: string;
+  description: string;
+  link: string;
+  avatar: string;
+};
+
 type User = {
   id: number;
   name: string;

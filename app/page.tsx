@@ -2,10 +2,12 @@
 import Link from "next/link";
 import Posts from "./components/Posts";
 import { Inter } from "next/font/google";
-import CardSlider from "./components/CardSlider";
+import CardSlider from "./carousel/CardSlider";
 const inter = Inter({ subsets: ["latin"] });
 
-//const inter = Inter({ subsets: ["latin"] });
+{
+  /* <Posts /> */
+}
 
 export default function Home() {
   return (
@@ -15,7 +17,6 @@ export default function Home() {
         <span className="whitespace-nowrap">
           This is <span className="font-bold">Mayu</span>.
         </span>
-        <Posts />
         <CardSlider />
       </p>
     </main>
