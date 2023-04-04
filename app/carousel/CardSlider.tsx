@@ -26,21 +26,23 @@ function CardSlider() {
   if (follows.length === 0) {
     return <div>Loading...</div>;
   }
-
+  //content-center justify-center
   return (
     <>
       <h2 className="text-blue pt-6 pb-4">Following</h2>
 
-      <section
-        id="slider"
-        className="bg-purple flex items-center justify-items-center"
-      >
+      <section className="bg-purple flex items-center">
         <MdChevronLeft
           className="opacity-50 cursor-pointer hover:opacity-100"
           onClick={slideLeft}
           size={40}
         />
-        <SliderItem follows={follows} />
+        <div
+          id="slider"
+          className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide content-center"
+        >
+          <SliderItem follows={follows} />
+        </div>
         <MdChevronRight
           className="opacity-50 cursor-pointer hover:opacity-100"
           onClick={slideRight}

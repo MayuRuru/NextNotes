@@ -17,7 +17,12 @@ export default function SliderItem({ follows }: { follows: Follow[] }) {
     >
       {follows.map((item) => {
         return (
-          <Card key={item.id} cardImage={item.avatar} cardTitle={item.name} />
+          <Card
+            key={item.id}
+            cardAvatar={item.avatar}
+            cardName={item.name}
+            cardText={item.description}
+          />
         );
       })}
     </section>
