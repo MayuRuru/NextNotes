@@ -10,13 +10,19 @@ type Props = {
 function Card({ cardAvatar, cardName, cardText }: Props) {
   return (
     <article className="bg-blue inline-block w-[300px] h-auto p-8 m-5 cursor-pointer rounded-xl border-black drop-shadow-xl hover:scale-105 ease-in-out duration-300 items-center">
-      <div className="justify-self-center w-200 h-200">
-        <Image src={cardAvatar} width={200} height={200} alt="avatar" />
+      <div className="w-200 h-200 flex justify-center items-center">
+        <Image
+          src={cardAvatar}
+          width={200}
+          height={200}
+          alt="avatar"
+          className="justify-self-center"
+        />
       </div>
       <p className="text-light font-bold text-center p-2 overflow-ellipsis whitespace-normal">
         {cardName}
       </p>
-      <p className="text-left overflow-ellipsis whitespace-normal text-base">
+      <p className="text-center overflow-ellipsis whitespace-normal text-base">
         {cardText}
       </p>
     </article>

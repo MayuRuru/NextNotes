@@ -18,9 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="dark:bg-black">
-        <Navbar />
-        <Avatar />
-        {children}
+        <div className="fixed w-full h-20 z-50">
+          <Navbar />
+        </div>
+        <div className="pt-20">
+          <Avatar />
+          {children}
+        </div>
       </body>
     </html>
   );

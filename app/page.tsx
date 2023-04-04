@@ -17,7 +17,9 @@ export default function Home() {
         <span className="whitespace-nowrap">
           This is <span className="font-bold">Mayu</span>.
         </span>
-        <CardSlider />
+        <section>
+          <CardSlider />
+        </section>
       </p>
     </main>
   );
