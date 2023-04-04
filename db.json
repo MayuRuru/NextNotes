@@ -78,7 +78,7 @@
       "type": "Community",
       "description": "Inspiring and mentoring women in tech",
       "link": "https://step4ward.notion.site/",
-      "avatar": "/public/images/collaborate.svg"
+      "avatar": "/images/collaborate.svg"
     },
     {
       "id": 2,
@@ -86,7 +86,7 @@
       "type": "Podcast",
       "description": "By Alba Silvente (@dawntraoz) and Miriam González (@miriamgonp)",
       "link": "https://www.youtube.com/c/nomedalavida",
-      "avatar": "/public/images/radio.svg"
+      "avatar": "/images/radio.svg"
     },
     {
       "id": 3,
@@ -94,7 +94,7 @@
       "type": "Divulgation",
       "description": "News, Transfeminist security, Workshops...",
       "link": "https://www.youtube.com/c/nomedalavida",
-      "avatar": "/public/images/video.svg"
+      "avatar": "/images/video.svg"
     },
     {
       "id": 4,
@@ -102,7 +102,7 @@
       "type": "Community",
       "description": "International inclusive community producing trainings, conferences, hackatons...",
       "link": "https://www.youtube.com/user/WomenWhoCode",
-      "avatar": "/public/images/study.svg"
+      "avatar": "/images/study.svg"
     }
   ]
 }
