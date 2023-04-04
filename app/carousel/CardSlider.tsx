@@ -29,7 +29,7 @@ export default function CardSlider() {
 
   return (
     <section className="bg-purple flex items-center flex-col">
-      <h2 className="text-blue pt-6 pb-4">Following</h2>
+      <h2 className="text-blue pt-6 pb-1">Following</h2>
       <div className="flex justify-between items-center">
         <MdChevronLeft
           className="opacity-50 cursor-pointer hover:opacity-100"

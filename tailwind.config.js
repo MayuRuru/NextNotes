@@ -8,11 +8,14 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      black: "#171717",
+      black: "#252525",
+      navbar: "#52057B",
       purple: "#6366F1",
       lightpurple: "#C084FC",
-      blue: "#4ADE80",
-      light: "#86EFAC",
+      blue: "#64DFDF",
+      lightblue: "#80FFDB",
+      green: "#4ADE80",
+      lightgreen: "#86EFAC",
       white: "#EDE9FE",
     },
   },

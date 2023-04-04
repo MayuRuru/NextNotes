@@ -12,14 +12,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={inter.className}>
-      <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
+      <p className="mt-12 mb-12 text-3xl text-center dark:text-white p-6">
         Hello there!
         <span className="whitespace-nowrap">
           This is <span className="font-bold">Mayu</span>.
         </span>
-        <section>
+        <div>
           <CardSlider />
-        </section>
+        </div>
       </p>
     </main>
   );
