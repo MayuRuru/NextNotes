@@ -2,7 +2,7 @@ type Props = {
   promise: Promise<Book[]>;
 };
 
-import React from "react";
+// TODO: This component is not used yet
 
 export default async function BookInsights({ promise }: Props) {
   const insights = await promise;

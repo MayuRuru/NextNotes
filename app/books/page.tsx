@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import getAllBooks from "@/lib/getAllBooks";
-import Link from "next/link";
 import { FaEye } from "react-icons/fa";
 
 export const metadata: Metadata = {
@@ -8,6 +7,7 @@ export const metadata: Metadata = {
 };
 
 // TODO: Convert into a Masonry with react-masonry-css
+// TODO: Filter by topic
 
 export default async function Books() {
   const booksData: Promise<Book[]> = getAllBooks();
