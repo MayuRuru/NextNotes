@@ -1,8 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Intro to this project
 
-## Getting Started
+An app build in Next.js using Typescript and Tailwind.
+I am using json-server to fetch data that I will migrate later on to a MongoDB.
 
-First, run the development server:
+I want to gather **resources** I use often, recommend **tech communities** or interesting **divulgation assets** and highlight **content creators** I value and follow on daily basis.
+
+### Getting Started
+
+Clone this repo.
+
+- Run the fake api from json-server:
+
+```bash
+npm fake_api
+```
+
+- Run the development server:
 
 ```bash
 npm run dev
@@ -14,25 +27,16 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Resouces used
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [Next.js Beta Documentation](https://beta.nextjs.org/docs) - to try out the newest features of Next 13.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- This project takes examples from [`Midudev`](https://www.youtube.com/watch?v=tA-_vAz9y78) and [`Dave Gray`](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj) 's tutorials, along with [Learn Next.js](https://nextjs.org/learn).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+I've implemented error Handling, used static Metadata and tried different fetching options for different paged and nested routes:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Fetching data on the server using Server Components
+- Fetching data in parallel using React Suspense
+- Using Incremental Server Rendering
+- Creating Client components for small interactive components
+- Using static params to convert SSR to SSG for dynamic components
