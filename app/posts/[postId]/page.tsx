@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getPostData, getSortedPostsData } from "@/lib/posts";
 import { notFound } from "next/navigation";
-import getFormattedDate from "@/lib/getFormattedDate";
+//import getFormattedDate from "@/lib/getFormattedDate";
 
 export function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -42,12 +42,12 @@ export default async function PostsPage({
 
   const { title, date, contentHtml } = await getPostData(postId);
 
-  const formattedDate = getFormattedDate(date);
+  //const formattedDate = getFormattedDate(date);
 
   return (
     <main className="px-6 prose prose-xl prose-slate dark:prose-invert mx-auto">
       <h1 className="text-3xl mt-4 mb-0">{title}</h1>
-      <p className="mt-0">{formattedDate}</p>
+      {/*  <p className="mt-0">{formattedDate}</p> */}
       <article>
         <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
       </article>

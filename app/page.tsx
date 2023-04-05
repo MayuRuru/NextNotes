@@ -25,7 +25,7 @@ export default function Home() {
         <CardSlider />
       </section>
 
-      <section className="mb-12">
+      <section className="m-12">
         <Posts />
       </section>
     </main>
