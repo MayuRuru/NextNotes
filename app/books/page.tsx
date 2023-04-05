@@ -20,7 +20,7 @@ export default async function Books() {
         {books.map((book) => (
           <li
             key={book.id}
-            className="bg-lightpurple rounded-lg shadow flex flex-col"
+            className="bg-lightpurple rounded-lg shadow flex flex-col hover:opacity-80 "
           >
             <div className="p-6 flex-1 flex flex-col justify-between">
               <header className="mb-4">

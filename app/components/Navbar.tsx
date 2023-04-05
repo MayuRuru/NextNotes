@@ -3,21 +3,24 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav className="bg-navbar p-1 flex flex-col md:flex-row justify-between items-center top-0 drop-shadow-x1 rounded border-slate-100 mx-auto">
+    <nav className="bg-navbar p-1 flex flex-col md:flex-row justify-between items-center top-0 drop-shadow-x1 align-middle rounded border-slate-100 mx-auto">
       {/*LINKS:*/}
       <h3 className="font-bold text-white place-content-center mb-2 md:mb-0 flex flex-row gap-8 m-4 text-2xl">
-        <Link href="/" className="text-white/90 no-underline hover:text-white">
+        <Link
+          href="/"
+          className="text-white/90 hover:opacity-80 no-underline hover:text-white"
+        >
           Home
         </Link>
         <Link
           href="/about"
-          className="text-white/90 no-underline hover:text-white"
+          className="text-white/90 hover:opacity-80 no-underline hover:text-white"
         >
           About
         </Link>
         <Link
           href="/books"
-          className="text-white/90 no-underline hover:text-white"
+          className="text-white/90 hover:opacity-80 no-underline hover:text-white"
         >
           Books
         </Link>

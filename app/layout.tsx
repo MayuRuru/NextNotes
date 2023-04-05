@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 // import { Inter } from 'next/font/google'
 import Navbar from "./components/Navbar";
-import Avatar from "./components/Avatar";
 
 export const metadata: Metadata = {
   title: "Mayu Next",
@@ -20,10 +19,7 @@ export default function RootLayout({
         <div className="fixed w-full h-20 z-50">
           <Navbar />
         </div>
-        <div className="pt-20">
-          <Avatar />
-          {children}
-        </div>
+        <div className="pt-20">{children}</div>
       </body>
     </html>
   );

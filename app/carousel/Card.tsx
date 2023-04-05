@@ -9,7 +9,7 @@ type Props = {
 
 function Card({ cardAvatar, cardName, cardText }: Props) {
   return (
-    <article className="bg-blue inline-block w-[300px] h-auto p-8 m-5 cursor-pointer rounded-xl border-black drop-shadow-xl hover:scale-105 ease-in-out duration-300 items-center">
+    <article className="bg-blue inline-block w-[300px] h-auto p-8 m-5 rounded-xl border border-navbar border-solid drop-shadow-xl hover:scale-105 ease-in-out duration-300 items-center">
       <div className="w-200 h-200 flex justify-center items-center">
         <Image
           src={cardAvatar}

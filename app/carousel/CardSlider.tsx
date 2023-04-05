@@ -6,14 +6,21 @@ import { useEffect, useState } from "react";
 
 export default function CardSlider() {
   const slideLeft = () => {
+    console.log("slideLeft function called");
     var slider = document.getElementById("slider")!;
-    slider.scrollLeft = slider.scrollLeft - 500;
+    slider.scrollTo({
+      left: slider.scrollLeft - 500,
+      behavior: "smooth",
+    });
   };
 
   const slideRight = () => {
+    console.log("slideRight function called");
     var slider = document.getElementById("slider")!;
-
-    slider.scrollLeft = slider.scrollLeft + 500;
+    slider.scrollTo({
+      left: slider.scrollLeft + 500,
+      behavior: "smooth",
+    });
   };
 
   const [follows, setFollows] = useState<Follow[]>([]);
@@ -29,7 +36,7 @@ export default function CardSlider() {
 
   return (
     <section className="bg-purple flex items-center flex-col">
-      <h2 className="text-blue pt-6 pb-1">Following</h2>
+      <h2 className="text-blue text-3xl pt-6 pb-1">I am following:</h2>
       <div className="flex justify-between items-center">
         <MdChevronLeft
           className="opacity-50 cursor-pointer hover:opacity-100"

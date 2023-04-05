@@ -1,6 +1,7 @@
 //import Image from "next/image";
 import Link from "next/link";
-import Posts from "./components/Posts";
+import Avatar from "./components/Avatar";
+
 import { Inter } from "next/font/google";
 import CardSlider from "./carousel/CardSlider";
 const inter = Inter({ subsets: ["latin"] });
@@ -12,15 +13,24 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={inter.className}>
-      <p className="mt-12 mb-12 text-3xl text-center dark:text-white p-6">
-        Hello there!
-        <span className="whitespace-nowrap">
-          This is <span className="font-bold">Mayu</span>.
-        </span>
-        <div>
-          <CardSlider />
+      <section className="widescreen:section-min-height tallscreen:section-min-height m-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
+        <header className="sm:w-1/2">
+          <h2 className="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl">
+            Hello there! This is
+            <span className="font-bold text-blue"> Mayu</span>.
+          </h2>
+          <p className="mt-4 max-w-md text-center text-2xl text-lightblue sm:text-left">
+            I want to share what I read and who do I follow.
+          </p>
+        </header>
+        <div className="w-1/2">
+          <Avatar />
         </div>
-      </p>
+      </section>
+
+      <section className="mb-12">
+        <CardSlider />
+      </section>
     </main>
   );
 }
