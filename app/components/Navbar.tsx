@@ -26,6 +26,12 @@ export default function Navbar() {
         >
           Books
         </Link>
+        <Link
+          href="/creators"
+          className="text-white/90 hover:opacity-80 no-underline hover:text-white"
+        >
+          Creators
+        </Link>
       </h3>
       {/*ICONS:*/}
       <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4 text-white text-4xl lg:text-3xl m-4">

@@ -1,5 +1,10 @@
 import { getSortedPostsData } from "@/lib/posts";
 import ListItem from "./ListItem";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Creators",
+};
 
 export default function Posts() {
   const posts = getSortedPostsData();
