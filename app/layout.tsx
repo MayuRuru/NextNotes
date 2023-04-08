@@ -15,12 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-black">
-        <div className="fixed w-full h-20 z-50">
-          <Navbar />
-        </div>
+      <div className="dark:bg-black">
+        <Navbar />
         <div className="pt-20">{children}</div>
-      </body>
+      </div>
     </html>
   );
 }

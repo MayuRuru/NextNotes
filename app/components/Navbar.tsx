@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+//fixed w-full h-20 z-50 (prev navbar)
+
 export default function Navbar() {
   return (
     <nav className="bg-navbar p-1 flex flex-col md:flex-row justify-between items-center top-0 drop-shadow-x1 align-middle rounded border-slate-100 mx-auto">
