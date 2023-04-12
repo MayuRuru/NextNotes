@@ -1,9 +1,8 @@
 ## Intro to this project
 
-An app build in Next.js using Typescript and Tailwind.
-I am using json-server to fetch data that I will migrate later on to a MongoDB.
+An app built in Next.js using Typescript and Tailwind CSS.
 
-I want to gather **resources** I use often, recommend **tech communities** or interesting **divulgation assets** and highlight **content creators** I value and follow on daily basis.
+I want to gather **references** I look up often, recommend **tech communities** or interesting **divulgation assets** and highlight **content creators** I value and follow on daily basis.
 
 ### Getting Started
 
@@ -26,6 +25,15 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Next steps
+
+- Migrate data from json-server to a MongoDB
+- Unit testing
+- Improve color scheme and UI
+- Refactor code following DRY, YARN and SOLID principles
+- Include new sections
+- Deploy in Vercel
 
 ## Resouces used
 

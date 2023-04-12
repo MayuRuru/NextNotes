@@ -60,14 +60,21 @@
       "id": 9,
       "title": "Head First Design Patterns",
       "author": "Head First Series",
-      "description": "Ls patrones más usados explicados de una manera muy didáctica. El libro es realmente bueno y trata las ideas con mucha profundidad. Al mismo tiempo consiguen hacerlo entretenido. Toda una hazaña!",
+      "description": "Los patrones más usados explicados de una manera muy didáctica. El libro es realmente bueno y trata las ideas con mucha profundidad. Al mismo tiempo consiguen hacerlo entretenido. Toda una hazaña!",
       "link": "https://www.oreilly.com/library/view/head-first-design/0596007124/"
     },
     {
       "id": 10,
+      "title": "The Pragmatic Programmer: From Journeyman to Master",
+      "author": "Andrew Hunt and David Thomas",
+      "description": "The book is focused on the principles and practices of software development, and it offers practical advice and tips to become a better programmer. Overall, the main lesson of the book is to be a pragmatic programmer who continuously improves their skills, uses a variety of tools and technologies, practices good coding habits, communicates effectively, and focuses on the big picture.",
+      "link": "https://ricardogeek.com/5-conclusiones-esenciales-del-libro-the-pragmatic-programmer/"
+    },
+    {
+      "id": 11,
       "title": "Working Effectively with Legacy Code",
       "author": "Michael Feathers",
-      "description": "Recomendado para aprender técnicas que te permitan introducir tests en código legacy poco o no testeable, y a partir de ahí poder empezar a refactorizarlo. También te ayuda a que te des cuenta de cómo hacer tu código más testeable.",
+      "description": "The book is aimed at software developers who work with legacy code and want to improve the quality, maintainability, and reliability of the code. It offers a range of techniques and tools that can be used to work with legacy code, including dependency breaking, characterization testing, and seam identification. ",
       "link": "https://www.oreilly.com/library/view/working-effectively-with/0131177052/"
     }
   ],
