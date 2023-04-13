@@ -20,21 +20,21 @@ export default function RootLayout({
       <body className="dark:bg-black">
         <Navbar />
 
-        <section className="widescreen:section-min-height tallscreen:section-min-height m-12 flex flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
+        <section className="widescreen:section-min-height tallscreen:section-min-height m-10 flex flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
           <header className="sm:w-1/2">
             <h2 className="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl">
               Hello there! This is 🔥
               <span className="font-bold text-blue"> Mayu</span>.
             </h2>
             <p className="mt-4 max-w-md text-center text-2xl text-lightblue sm:text-left">
-              I want to share what I read and who do I follow.
+              I want to share with you...
             </p>
           </header>
           <div className="rounded-full overflow-hidden">
             <Avatar />
           </div>
         </section>
-        <div className="pt-10">{children}</div>
+        <main>{children}</main>
       </body>
     </html>
   );

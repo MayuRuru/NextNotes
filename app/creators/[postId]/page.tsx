@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { getPostData, getSortedPostsData } from "@/lib/posts";
+import { getPostData, getSortedPostsData } from "@/lib/creators";
 import { notFound } from "next/navigation";
-//import getFormattedDate from "@/lib/getFormattedDate";
+import getFormattedDate from "@/lib/getFormattedDate";
 
 export function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -40,7 +40,7 @@ export default async function PostsPage({
     return notFound();
   }
 
-  const { title, date, contentHtml } = await getPostData(postId);
+  const { title, contentHtml } = await getPostData(postId);
 
   //const formattedDate = getFormattedDate(date);
 

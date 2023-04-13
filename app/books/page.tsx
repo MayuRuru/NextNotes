@@ -15,7 +15,10 @@ export default async function Books() {
   const books = await booksData;
 
   const content = (
-    <section className="px-6 mx-auto">
+    <section className="px-6 mx-auto flex flex-col items-center">
+      <h2 className="text-blue text-4xl font-bold pb-6">
+        My reading books list:
+      </h2>
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {books.map((book) => (
           <li
@@ -43,5 +46,6 @@ export default async function Books() {
       </ul>
     </section>
   );
+
   return <div>{content}</div>;
 }

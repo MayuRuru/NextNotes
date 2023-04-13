@@ -35,9 +35,8 @@ export default function CardSlider() {
   }
 
   return (
-    <section className="bg-purple flex items-center flex-col align-center">
-      <h2 className="text-blue text-4xl font-bold pt-6 pb-1">My highlights:</h2>
-      <div className="flex justify-between items-center">
+    <section className="bg-purple flex items-center flex-col">
+      <div className="flex justify-between items-center align-center">
         <MdChevronLeft
           className="opacity-50 cursor-pointer hover:opacity-100"
           onClick={slideLeft}
