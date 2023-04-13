@@ -33,15 +33,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Improve color scheme and UI
 - Refactor code following DRY, YARN and SOLID principles
 - Include new sections
+- Add skeleton loaders
 - Deploy in Vercel
 
 ## Resouces used
 
-- [Next.js Beta Documentation](https://beta.nextjs.org/docs) - to try out the newest features of Next 13.
+- [Next.js Beta Documentation](https://beta.nextjs.org/docs) - to try out the newest features of Next 13, along with [Learn Next.js](https://nextjs.org/learn).
 
-- This project takes examples from [`Midudev`](https://www.youtube.com/watch?v=tA-_vAz9y78) and [`Dave Gray`](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj) 's tutorials, along with [Learn Next.js](https://nextjs.org/learn).
+- This project takes examples from [`Midudev`](https://www.youtube.com/watch?v=tA-_vAz9y78) and [`Dave Gray`](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj) 's tutorials.
 
-I've implemented error Handling, used static Metadata and tried different fetching options for different paged and nested routes:
+I've implemented error Handling, used static Metadata and tried different fetching options for different pages and nested routes:
 
 - Fetching data on the server using Server Components
 - Fetching data in parallel using React Suspense
