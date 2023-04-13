@@ -4,7 +4,7 @@ export default function Avatar() {
   return (
     <Image
       //className="rounded-full object-cover object-center"
-      src="/images/bgs.jpg"
+      src="/images/avatar/bgs.jpg"
       width={200}
       height={200}
       alt="avatar"
