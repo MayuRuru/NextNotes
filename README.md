@@ -1,6 +1,6 @@
 ## Intro to this project
 
-An app built in Next.js using Typescript and Tailwind CSS.
+An app built in Next.js 13 using Typescript and Tailwind CSS.
 
 I want to gather **references** I look up often, recommend **tech communities** or interesting **divulgation assets** and highlight **content creators** I value and follow on daily basis.
 
@@ -37,7 +37,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Improve color scheme and UI
 - Refactor code following DRY, YARN and SOLID principles
 - Include new sections
-- Add skeleton loaders
+- Add loading files and skeleton loaders
 - Deploy in Vercel
 
 ## Resouces used

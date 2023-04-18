@@ -19,7 +19,9 @@ module.exports = {
       white: "#EDE9FE",
     },
   },
-
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   plugins: [
     require("@tailwindcss/typography"),
     require("tailwind-scrollbar-hide"),
