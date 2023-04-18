@@ -17,6 +17,7 @@ function Card({ cardAvatar, cardName, cardText }: Props) {
           height={200}
           alt="avatar"
           className="justify-self-center"
+          style={{ aspectRatio: "1 / 1", width: "100%", height: "auto" }}
         />
       </div>
       <p className="text-light font-bold text-center p-2 overflow-ellipsis whitespace-normal">

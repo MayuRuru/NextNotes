@@ -9,6 +9,7 @@ export default function Avatar() {
       height={200}
       alt="avatar"
       priority={true}
+      style={{ aspectRatio: "1 / 1", width: "100%", height: "auto" }}
     />
   );
 }
