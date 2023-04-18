@@ -51,7 +51,9 @@ export default async function PostsPage({
       <article>
         <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
       </article>
-      <Link href="/">::arrow_backward:</Link>
+      <Link href="/" target="_blank">
+        ⬅️
+      </Link>
     </main>
   );
 }

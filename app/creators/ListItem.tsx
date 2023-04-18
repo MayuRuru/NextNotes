@@ -14,6 +14,7 @@ export default function ListItem({ post }: Props) {
       <Link
         className="underline hover:text-black/70 dark:hover:text-white"
         href={`/creators/${id}`}
+        target="_blank"
       >
         {title}
       </Link>

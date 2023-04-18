@@ -25,6 +25,7 @@ export default function Navbar() {
       <h3 className="font-bold text-white place-content-center mb-2 md:mb-0 flex flex-row gap-8 m-4 text-2xl">
         {links.map(({ route, label }) => (
           <Link
+            target="_blank"
             key={label}
             href={route}
             className="text-white/90 hover:opacity-80 no-underline hover:text-white"
@@ -37,6 +38,7 @@ export default function Navbar() {
       <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4 text-white text-4xl lg:text-3xl m-4">
         {icons.map(({ href, icon }) => (
           <Link
+            target="_blank"
             key={href}
             href={href}
             className="text-white/90 hover:text-white"
