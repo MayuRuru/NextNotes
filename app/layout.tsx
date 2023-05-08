@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
 import Avatar from "./components/Avatar";
+import { Toaster } from "./components/Toaster";
 
 export const metadata: Metadata = {
   title: "Mayu Next",
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en" className={myFont.className}>
       <body className="dark:bg-black">
         <Navbar />
+        <Toaster />
 
         <section className="widescreen:section-min-height tallscreen:section-min-height m-10 flex flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
           <header className="sm:w-1/2">

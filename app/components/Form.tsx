@@ -1,21 +1,37 @@
 "use client";
+import { toast } from "sonner";
 import { Button } from "./Button";
 import { Input } from "./Input";
 
 //TODO: convert imports to alias not dynamic
 
 export const Form = () => {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
     const formData = new FormData(form);
     const { name, email, message } = Object.fromEntries(formData.entries());
+
+    fetch("/api/kv-form-send", {
+      method: "POST",
+      body: JSON.stringify({ email, name, message }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then(() => {
+        toast.success("Message sent!");
+        form.reset();
+      })
+      .catch(() => {
+        toast.error("Error sending message");
+      });
   };
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
       <h2 className="mb-4 text-4xl font-bold tracking-tight text-center">
-        Contact From
+        Contact me:
       </h2>
       <form
         onSubmit={handleSubmit}

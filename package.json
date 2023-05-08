@@ -13,6 +13,7 @@
     "@types/node": "18.15.7",
     "@types/react": "18.0.29",
     "@types/react-dom": "18.0.11",
+    "@vercel/kv": "^0.1.2",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "gray": "^0.0.6",
@@ -25,6 +26,7 @@
     "react-icons": "^4.8.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.2",
+    "sonner": "^0.3.5",
     "tailwind-scrollbar-hide": "^1.1.7",
     "typescript": "5.0.2"
   },
