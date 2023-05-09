@@ -12,6 +12,7 @@ export const Form = () => {
     const formData = new FormData(form);
     const { name, email, message } = Object.fromEntries(formData.entries());
 
+    // POSTGRES: ('api/postgres-form-send')
     fetch("/api/kv-form-send", {
       method: "POST",
       body: JSON.stringify({ email, name, message }),
@@ -22,6 +23,9 @@ export const Form = () => {
       .then(() => {
         toast.success("Message sent!");
         form.reset();
+
+        const $view = document.querySelector("#count-views");
+        if ($view != null) $view.innerHTML = `${Number($view.textContent) + 1}`;
       })
       .catch(() => {
         toast.error("Error sending message");
@@ -35,7 +39,7 @@ export const Form = () => {
       </h2>
       <form
         onSubmit={handleSubmit}
-        className="min-w-[400px] p-8 space-y-8 border rounded border-white/10"
+        className="text-left min-w-[400px] p-8 space-y-8 border rounded border-white/10"
       >
         <Input
           name="email"
