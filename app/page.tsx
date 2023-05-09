@@ -1,5 +1,6 @@
 import CardSlider from "./carousel/CardSlider";
-import { Form } from "./components/Form";
+import { ContactsView } from "./form/ContactsView";
+import { Form } from "./form/Form";
 
 export default function Home() {
   return (
@@ -9,8 +10,10 @@ export default function Home() {
           My highlighted references:
         </h2>
         <CardSlider />
-        <div className="flex max-w-2xl mx-auto">
+        <div className="flex flex-col text-center max-w-2xl mx-auto">
           <Form />
+          {/*           <ContactsView />
+           */}
         </div>
       </section>
     </main>

@@ -1,26 +1,24 @@
-import kv, { VercelKV } from "@vercel/kv";
-import { NextResponse } from "next/server";
+import { db } from "@vercel/postgres";
 
 export async function POST(request: Request) {
+  let client;
+  try {
+    client = await db.connect();
+  } catch (error) {
+    console.log("POSTGRESS error: ", error);
+    return new Response("Internal error!", { status: 500 });
+  }
+
   const { name, email, message } = await request.json();
 
   if (!name || !email || !message) {
     return new Response("Please provide all fields.", { status: 400 });
   }
 
-  if (
-    typeof name != "string" ||
-    typeof email != "string" ||
-    typeof message != "string"
-  ) {
-    return new Response("Invalid fields.", { status: 400 });
-  }
-
-  const uuid = crypto.randomUUID();
-  const timestamp = Date.now();
-
   try {
-    await kv.set(`contact-${uuid}`, { name, email, message, timestamp });
+    const { rows } =
+      await client.sql`INSERT INTO messages (name, email, message) VALUES (${name}, ${email}, ${message})`;
+    console.log(rows);
 
     return new Response("Contact saved!", { status: 200 });
   } catch (error) {
