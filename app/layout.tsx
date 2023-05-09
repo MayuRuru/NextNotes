@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
 import Avatar from "./components/Avatar";
-import { Toaster } from "./components/Toaster";
+import { Toaster } from "./form/Toaster";
 
 export const metadata: Metadata = {
   title: "Mayu Next",
