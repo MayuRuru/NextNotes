@@ -32,8 +32,8 @@ export const Form = () => {
       });
   };
 
-  return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-24">
+  const content = (
+    <main className="flex flex-col min-h-screen p-24">
       <h2 className="mb-4 text-4xl font-bold tracking-tight text-center">
         Contact me:
       </h2>
@@ -69,4 +69,6 @@ export const Form = () => {
       </form>
     </main>
   );
+
+  return <div>{content}</div>;
 };
