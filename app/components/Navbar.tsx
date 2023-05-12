@@ -25,7 +25,6 @@ export default function Navbar() {
       <h3 className="font-bold text-white place-content-center mb-2 md:mb-0 flex flex-row gap-8 m-4 text-2xl">
         {links.map(({ route, label }) => (
           <Link
-            target="_blank"
             key={label}
             href={route}
             className="text-white/90 hover:opacity-80 no-underline hover:text-white"
