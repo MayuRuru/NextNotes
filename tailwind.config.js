@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    screens: {},
+    fontFamily: {
+      display: "var(--font-title)",
+      body: "var(--font-text)",
+    },
     colors: {
       black: "#252525",
       navbar: "#44403C",
