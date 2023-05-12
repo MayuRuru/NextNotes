@@ -4,63 +4,63 @@
       "id": 1,
       "title": "Test-Driven Development: By Example",
       "author": "Kent Beck",
-      "description": "Libro del creador de TDD que explica con un ejemplo los pasos que sigue para ir resolviendo un problema sencillo. Muy interesante todo el grupo de patrones que presenta en el tercer capitulo y al que no siempre se le presta atención.",
+      "description": "By the TDD creator, explains all steps he follows to problem-solving, including patterns.",
       "link": "https://www.goodreads.com/book/show/387190.Test_Driven_Development"
     },
     {
       "id": 2,
       "title": "Growing Object-Oriented Software, Guided by Tests",
       "author": "Steve Freeman, Nat Pryce",
-      "description": "Muy buen libro sobre TDD. Cuenta con un ejemplo que van desarrollando y combinan la teoría muy bien. Además de ver el enfoque de la London School. Aunque no es un libro dificil de leer, tiene mucho conocimiento condensado y con el tiempo empiezas a apreciar las cosas de las que habla. Especialmente relevante como combina TDD con el enfoque de orientación a objetos de Rebbeca Wirsf-Brock.",
+      "description": "Combining examples with theory, a good book to learn TDD from London School perspective. It also combines TDDD with Object Oriented perspective from Rebbeca Wirsf-Brock.",
       "link": "https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests?from_search=true&from_srp=true&qid=4QWUNCBx1A&rank=1"
     },
     {
       "id": 3,
       "title": "Refactoring: Improving the Design of Existing Code 1st edition",
       "author": "Martin Fowler,",
-      "description": "Todos los ejemplos vienen en Java. Incluye refactorings largos que ya no aparecen en la segunda edición. Algunas mecánicas de refactoring han quedado obsoletas en java gracias a la potencia de los IDEs actuales. La discusión de code smells es mejor en el Refactoring Workbook.",
+      "description": "Long refactoring examples in Java.",
       "link": "https://www.goodreads.com/book/show/44936.Refactoring"
     },
     {
       "id": 4,
       "title": "Refactoring: Improving the Design of Existing Code 2nd edition",
       "author": "Martin Fowler,",
-      "description": "Todos los ejemplos son en JavaScript. Los nombres de muchos refactorings han cambiado para abrirse a formas de trabajar más funcionales. El capítulo de smells ha variado un poco, para mi ha mejorado. El capítulo en que se explica el concepto de refactoring, su implicación económica, las herramientas y los workflows de refactoring ha mejorado muchísimo gracias a la experiencia de un montón de años. Creo que leería en este libro primero, y luego dependiendo del lenguaje que te interese miraría el catálogo de refactorings de la primera edición que sigue siendo más ameno a lenguajes como Java o PHP.",
+      "description": "Improved refactoring concept explanations and workflows, in Javascript. It talks about Code Smells.",
       "link": "https://martinfowler.com/articles/refactoring-2nd-ed.html"
     },
     {
       "id": 5,
       "title": "Implementation Patterns",
       "author": "Kent Beck",
-      "description": "Es como Clean Code pero desde mi punto de vista con menos dogma, y mejor razonado. Es la versión Java de un libro que originalmente salió para Smalltalk, pero los principios y patrones que explican puede aportar muchísimo a cualquier programador.",
+      "description": "Similar to Clean code, in Java, including patterns and principles very useful.",
       "link": "https://www.goodreads.com/book/show/781559.Implementation_Patterns"
     },
     {
       "id": 6,
       "title": "Agile Principles, Patterns, and Practices in C#",
       "author": "Robert C. Martin, Micah Martin",
-      "description": "La mejor explicación de SOLID y de los principios de gestión de dependencias entre paquetes que he visto. De cuando el autor no había caido aún en el dogmatismo. Los ejemplos están en C#, pero aporta mucho a cualquier lenguaje.",
+      "description": "Best explanation of SOLID principles and dependency design in C#.",
       "link": "https://www.goodreads.com/book/show/84983.Agile_Principles_Patterns_and_Practices_in_C_"
     },
     {
       "id": 7,
       "title": "Principles of Package Design",
       "author": "Matthias Noback",
-      "description": "Complementa a Agile Principles, Patterns, and Practices in C# porque incluye un montón de ejemplos que ayudan a profundizar más en SOLID y en los principios de gestión de depedencias entre paquetes. Los ejemplos están en PHP.",
+      "description": "It gives a lot of PHP examples to dig into SOLID principles and how to manage dependency between packages.",
       "link": "https://matthiasnoback.nl/book/principles-of-package-design/"
     },
     {
       "id": 8,
       "title": "Practical Object-Oriented Design: An Agile Primer Using Ruby, 2nd Edition",
       "author": "Sandi Metz",
-      "description": "Una gran exposición de la OO basada desde la filosofía de modelar comportamientos y responsabilidades. Ojalá se usase en la enseñanza de OO.",
+      "description": "Genious exposition about modeling Object-Oriented behaviour and responsibilities.",
       "link": "https://www.pearson.com/en-us/subject-catalog/p/practical-object-oriented-design-an-agile-primer-using-ruby/P200000000472?view=educator"
     },
     {
       "id": 9,
       "title": "Head First Design Patterns",
       "author": "Head First Series",
-      "description": "Los patrones más usados explicados de una manera muy didáctica. El libro es realmente bueno y trata las ideas con mucha profundidad. Al mismo tiempo consiguen hacerlo entretenido. Toda una hazaña!",
+      "description": "Get to deep learn most used design patterns in a fun way!",
       "link": "https://www.oreilly.com/library/view/head-first-design/0596007124/"
     },
     {
