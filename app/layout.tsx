@@ -10,10 +10,15 @@ export const metadata: Metadata = {
   description: "A portfolio of my references",
 };
 
-const myFont = localFont({
+const titles = localFont({
   src: "../public/fonts/Agave-Regular.ttf",
-  variable: "--myfont",
+  variable: "--font-titles",
   display: "swap",
+});
+
+const text = localFont({
+  src: "../public/fonts/Montserrat-Regular.ttf",
+  variable: "--font-text",
 });
 
 export default function RootLayout({
@@ -22,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={myFont.className}>
+    <html lang="en" className={`${text.variable} ${titles.variable}`}>
       <body className="dark:bg-black">
         <Navbar />
         <Toaster />
